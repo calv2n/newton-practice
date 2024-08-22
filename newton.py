@@ -1,7 +1,9 @@
 def derivative(f, x, epsilon = 0.01):
+    """Takes first derivative of function f at point x"""
     return (f(x + epsilon) - f(x)) / epsilon
 
 def second_derivative(f, x):
+    """Takes second derivative of function f at point x"""
     return derivative(f, derivative(f, x))
 
 def optimize(x, f):
